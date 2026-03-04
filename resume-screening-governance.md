@@ -1,4 +1,4 @@
-# AI Governance Artifact  
+# AI Governance Artifact  🏛️
 ## Resume Screening Model  
 ### Case Study Inspired by the Amazon Hiring System
 
