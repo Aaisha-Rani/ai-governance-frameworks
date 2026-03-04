@@ -18,6 +18,7 @@
 - [Key Governance Takeaways](#key-governance-takeaways)
 - [Governance Implementation Checklist](#governance-implementation-checklist)
 - [Note](#note)
+- [Glossary of Key Terms](#Glossary-of-Key-Terms)
 
   ----
   ## 📌 Overview
@@ -378,5 +379,19 @@ This artifact is part of an effort to translate **AI governance principles into 
 
 The goal is to move beyond policy discussions and toward **practical governance architectures for trustworthy AI deployment**.
 
-AI governance becomes operational when risk is translated into:
+------
+
+## Glossary of Key Terms
+
+| Term | Meaning in This Context |
+|-----|-------------------------|
+| Drift Monitoring | Continuous observation of changes in model behavior or data distribution after deployment. Drift may indicate that the model is no longer performing reliably in the current environment. |
+| Subgroup Performance Gap | Difference in model outcomes between demographic groups (e.g., male vs female candidates). Used to detect potential bias. |
+| Human Override | When a human reviewer reverses or modifies a model decision. High override rates may signal model misalignment or bias. |
+| Rollback | A governance action where an AI system is reverted to a previous state or disabled when risks or failures are detected. |
+| Escalation | A structured process where risk signals are reported to higher levels of oversight (e.g., governance committee or executive leadership). |
+| Risk Threshold | A predefined limit that triggers investigation or intervention when exceeded. |
+| Monitoring Signal | A measurable indicator used to detect potential problems in AI system behavior. |
+| Governance Artifact | A structured document that defines how an AI system is supervised, monitored, and controlled. |
+
 
