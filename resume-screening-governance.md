@@ -1,293 +1,382 @@
-#AI Governance Artifact
-Resume Screening Model (Case Study Inspired by Amazon Hiring System)
-1. Purpose
+# AI Governance Artifact  
+## Resume Screening Model  
+### Case Study Inspired by the Amazon Hiring System
 
-This document outlines a governance control framework for an AI-based resume screening system used to shortlist job candidates.
+---
 
-The objective is to demonstrate how AI risk can be governed using structured ownership, risk discovery, measurement, and response mechanisms.
+## Table of Contents
 
-This artifact is inspired by lessons learned from the Amazon hiring case, where bias emerged due to historical training data.
+- Overview
+- AI Governance Control Loop
+- Governance Control Framework
+- Govern — Ownership Layer
+- Map — Risk Discovery Layer
+- Measure — Detection Layer
+- Manage — Response Layer
+- Key Governance Insight
+- Governance Maturity Model
+- Key Governance Takeaways
+- Governance Implementation Checklist
+- Note
 
-Governance Control Framework
+  ----
+  ## 📌 Overview
 
-The framework follows four governance layers:
+This document presents a governance framework for an AI-based **resume screening system** used to shortlist job candidates.
 
-Govern (Ownership & Accountability)
+The objective is to demonstrate how **AI governance principles can be operationalized** through structured oversight, risk identification, monitoring, and response mechanisms.
 
-Map (Risk Discovery)
+This artifact draws inspiration from the **Amazon hiring AI case**, where bias emerged due to historical training data and lack of governance oversight.
 
-Measure (Monitoring & Detection)
+----
 
-Manage (Response & Escalation)
+# AI Governance Control Loop
 
-1️⃣ GOVERN — Ownership Layer
-Who Approves AI Use?
+        +-----------+
+        |  GOVERN   |
+        | Ownership |
+        +-----+-----+
+              |
+              v
+        +-----+-----+
+        |   MAP     |
+        | Risk Scan |
+        +-----+-----+
+              |
+              v
+        +-----+-----+
+        |  MEASURE  |
+        | Monitoring|
+        +-----+-----+
+              |
+              v
+        +-----+-----+
+        |  MANAGE   |
+        | Response  |
+        +-----------+
+              |
+              v
+          Continuous
+           Oversight
 
-Chief Human Resources Officer (CHRO)
+   -----           
 
-Chief Risk Officer (CRO)
+# Governance Control Framework
 
-AI Governance Committee
+The governance model follows four layers:
 
-(Board oversight for high-risk deployments.)
+| Layer | Purpose |
+|------|--------|
+| **Govern** | Define ownership and accountability |
+| **Map** | Identify risks and impacted stakeholders |
+| **Measure** | Monitor fairness, drift, and system behavior |
+| **Manage** | Escalate and respond to risk events |
 
-Who Defines Acceptable Risk?
+---
 
-Executive Risk Committee, including:
+# 1️⃣ GOVERN — Ownership Layer
 
-HR leadership
+Defines **who is responsible for AI oversight and decision authority**.
 
-Legal
+### Who Approves AI Use?
 
-Compliance
+- Chief Human Resources Officer (**CHRO**)
+- Chief Risk Officer (**CRO**)
+- AI Governance Committee
 
-AI/ML leadership
+For high-risk AI systems, **board-level oversight** may also apply.
 
-Risk Management
+---
 
-They define:
+### Who Defines Acceptable Risk?
 
-Acceptable fairness thresholds
+An **Executive Risk Committee** including:
 
-Bias tolerance levels
+- HR leadership  
+- Legal & compliance  
+- Risk management  
+- AI/ML leadership  
 
-Monitoring requirements
+Responsibilities include defining:
 
-Who Signs Off Before Deployment?
+- fairness thresholds  
+- monitoring requirements  
+- acceptable risk tolerance
 
-AI Governance Committee:
+---
 
-Data Science Lead
+### Who Signs Off Before Deployment?
 
-HR Lead
+Deployment approval should involve:
 
-Legal Representative
+- Data Science Lead  
+- HR Lead  
+- Legal Representative  
+- Risk Officer  
+- Ethics / Compliance Representative  
 
-Risk Officer
+Deployment should only occur after:
 
-Ethics/Compliance Representative
+- fairness validation  
+- subgroup performance testing  
+- documentation of residual risk
 
-Deployment approval requires:
+---
 
-Fairness validation
+### Required Policies
 
-Subgroup performance testing
+Organizations should implement policies such as:
 
-Documentation of residual risk
+- Equal Opportunity Hiring Policy  
+- Bias & Fairness Testing Policy  
+- Mandatory Subgroup Evaluation  
+- Human-in-the-loop Hiring Policy  
+- AI Monitoring & Incident Escalation Policy  
 
-Policies Required
+Governance must be **documented and enforceable**.
 
-Equal Opportunity Hiring Policy
+---
 
-Bias & Fairness Testing Policy
+# 2️⃣ MAP — Risk Discovery Layer
 
-Mandatory Subgroup Evaluation Policy
+Identifies **where harm can occur and who may be affected**.
 
-Human-in-the-loop Requirement
+### Decision Influenced by AI
 
-AI Monitoring & Incident Escalation Policy
+The system influences:
 
-Governance is not intent-based — it is documented and enforceable.
+- candidate shortlisting  
+- resume ranking  
+- automated rejection decisions
 
-2️⃣ MAP — Risk Discovery Layer
-Decision Influenced by AI
+---
 
-Candidate shortlisting
+### Who Can Be Harmed?
 
-Ranking of resumes
+Potentially affected groups include:
 
-Automated rejection decisions
+- female candidates  
+- minority groups  
+- candidates from women-dominated colleges  
+- candidates with non-traditional backgrounds
 
-Who Can Be Harmed?
+---
 
-Female candidates
+### Misuse Scenarios
 
-Minority groups
+Possible risks include:
 
-Candidates from women-dominated colleges
+- over-reliance on automated scoring  
+- automated rejection without human review  
+- hidden proxy features for gender  
+- feature importance amplifying historical bias
 
-Non-traditional background applicants
+---
 
-Misuse Scenarios
+### Contextual Risk Factors
 
-Over-reliance on automated scoring
+Risk may arise from:
 
-Fully automated rejection without review
+- historically male-dominated hiring data  
+- imbalanced training datasets  
+- engineering-heavy hiring pipelines  
+- lack of fairness validation during development
 
-Hidden proxy features for gender
+---
 
-Feature importance unintentionally amplifying bias
+### Secondary Organizational Risks
 
-Contextual Risk Factors
+- reputational damage  
+- regulatory scrutiny  
+- reduced workforce diversity  
+- erosion of public trust
 
-Historical male-dominated workforce
+---
 
-Imbalanced training data
+# 3️⃣ MEASURE — Detection Layer
 
-Engineering-heavy hiring patterns
+Defines **metrics used to detect bias or harmful outcomes**.
 
-Lack of fairness review before deployment
+Monitoring must be **continuous after deployment**.
 
-Secondary Risks
+---
 
-Reputational damage
+## Key Monitoring Metrics
 
-Regulatory action
+### Selection Rate by Gender
 
-Talent pool reduction
+Selection Rate = Shortlisted Candidates / Total Applicants
 
-Public trust erosion
+Compare across demographic groups.
 
-3️⃣ MEASURE — Detection Layer
+---
 
-This layer translates principles into operational metrics.
+### Subgroup Performance Gap
 
-Key Monitoring Metrics
-1. Selection Rate by Gender
-
-Percentage of candidates shortlisted by subgroup.
-
-2. Subgroup Performance Gap
-
-Selection Rate Ratio:
+Metric:
 
 Female Selection Rate / Male Selection Rate
 
-Thresholds:
+| Ratio | Interpretation |
+|------|---------------|
+| ≥ 0.90 | Acceptable |
+| 0.80 – 0.89 | Monitor |
+| < 0.80 | Escalation Trigger |
 
-≥ 0.90 → Green
+---
 
-0.80–0.89 → Monitor
+### False Negative Rate by Subgroup
 
-< 0.80 → Escalation Trigger
+False Negative Rate = Qualified Candidates Rejected / Total Qualified Candidates
 
-(Aligned conceptually with adverse impact principles used in employment contexts.)
+Compare across demographic groups.
 
-3. False Negative Rate by Subgroup
+---
 
-Percentage of qualified candidates incorrectly rejected per subgroup.
+### Drift Monitoring
 
-4. Drift Threshold Monitoring
+Track changes in system behavior over time:
 
-Monitor:
+- gender distribution among shortlisted candidates  
+- feature importance changes
 
-Gender distribution of shortlisted candidates over time
+**Trigger Example**
 
-Feature importance shifts
+If subgroup distribution shifts by **more than 10% from baseline**, initiate investigation.
 
-Trigger:
+---
 
-If subgroup distribution shifts > 10% from baseline → investigation required.
+### Human Override Frequency
 
-5. Human Override Frequency
+Override Rate = AI Decisions Reversed / Total AI Decisions
 
-Definition:
-Percentage of AI decisions reversed by human recruiters.
+Example threshold:
 
-Threshold:
-
-If override rate > 20% for two consecutive review cycles → re-evaluation required.
+- if override rate exceeds **20% for two consecutive review cycles**, the model must be re-evaluated.
 
 High override rates may indicate:
 
-Model misalignment
+- model misalignment  
+- hidden bias  
+- data degradation
 
-Hidden bias
+---
 
-Data degradation
+### Complaint Signals
 
-6. Complaint Signals
+Additional signals include:
 
-Candidate complaints
+- candidate complaints  
+- HR internal audit findings  
+- legal inquiries
 
-HR internal audit findings
+All complaints should be logged in the **AI risk register**.
 
-Legal inquiries
+---
 
-Complaints are logged in risk register and reviewed quarterly.
+# 4️⃣ MANAGE — Response and Escalation
 
-4️⃣ MANAGE — Response & Escalation Layer
+Defines **actions taken when governance thresholds are breached**.
 
-Governance requires predefined response protocols.
+---
 
-When Do We Pause the System?
+### When Should the System Be Paused?
 
-Pause or restrict automation if:
+Automation should be paused if:
 
-Subgroup ratio < 0.80
+- subgroup selection ratio falls below threshold  
+- drift monitoring thresholds are breached  
+- legal complaints arise  
+- override rate exceeds tolerance limits
 
-Drift threshold breached
+---
 
-Legal complaint filed
+### Escalation Chain
 
-Override rate exceeds tolerance
+1. AI Governance Committee  
+2. CHRO and Chief Risk Officer  
+3. Legal & Compliance  
+4. Executive Risk Committee
 
-Escalation Chain
+Clear ownership prevents governance ambiguity.
 
-AI Governance Committee
+---
 
-CHRO + Chief Risk Officer
+### Rollback Protocol
 
-Legal & Compliance
+If bias or risk is detected:
 
-Executive Risk Committee (if severe)
+1. disable automated rejection  
+2. switch to human review  
+3. conduct feature contribution analysis  
+4. retrain model excluding biased proxies  
+5. revalidate fairness metrics
 
-Clear ownership prevents ambiguity.
+---
 
-Rollback Protocol
+### Incident Reporting
 
-Disable automated rejection
+All incidents should follow structured reporting:
 
-Switch to human review
+- incident logged in governance register  
+- root cause analysis conducted  
+- executive summary prepared  
+- regulatory notification if required
 
-Conduct feature contribution analysis
+---
+# Key Governance Insight
 
-Retrain model excluding biased proxies
+The Amazon hiring system failure illustrates that **AI failures are often governance failures**.
 
-Revalidate fairness metrics before redeployment
+Common causes include:
 
-Incident Reporting Process
-
-Incident logged in governance register
-
-Root cause analysis conducted
-
-Executive summary submitted
-
-Regulatory disclosure if required
-
-Post-incident policy review
-
-Key Governance Insight
-
-The failure in the Amazon hiring system was not solely algorithmic.
-
-It was a governance failure characterized by:
-
-Lack of predefined fairness thresholds
-
-Absence of monitoring triggers
-
-No structured escalation framework
+- lack of fairness thresholds  
+- absence of monitoring controls  
+- undefined escalation processes
 
 The model behaved according to its training data.
-The organization lacked structured oversight.
 
-Governance Maturity Model (Learning Outcome)
+The organization lacked **structured oversight mechanisms**.
+
+----
+
+# Governance Maturity Model
 
 AI governance becomes operational when risk is translated into:
 
 Intent → Metrics → Thresholds → Escalation → Documentation
 
-Without thresholds, governance remains theoretical.
+Without measurable thresholds and accountability structures, governance remains theoretical.
 
-With structured control loops, governance becomes enforceable.
+-----
+ ## Key Governance Takeaways
 
-Author Note
-This artifact is part of a broader effort to operationalize AI governance in enterprise ML systems.
+- AI failures are rarely algorithm failures — they are governance failures.
+- Bias detection requires **predefined monitoring metrics and thresholds**.
+- Responsible AI requires **continuous oversight**, not one-time validation.
+- Clear escalation paths are essential when governance thresholds are breached.
 
-The goal is to design governance as a continuous control loop — not a one-time compliance exercise.
+  ---
 
-This artifact is part of a broader effort to operationalize AI governance in enterprise ML systems.
+## Governance Implementation Checklist
 
-The goal is to design governance as a continuous control loop — not a one-time compliance exercise.
+Before deploying a resume screening AI system, organizations should verify:
+
+- [ ] Fairness metrics defined and validated
+- [ ] Subgroup performance testing completed
+- [ ] Human oversight defined
+- [ ] Monitoring thresholds established
+- [ ] Escalation procedures documented
+- [ ] Incident reporting process established
+
+
+---
+
+# Note
+
+This artifact is part of an effort to translate **AI governance principles into operational frameworks** for real-world ML systems.
+
+The goal is to move beyond policy discussions and toward **practical governance architectures for trustworthy AI deployment**.
+
+AI governance becomes operational when risk is translated into:
+
