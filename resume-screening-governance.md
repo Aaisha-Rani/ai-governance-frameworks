@@ -6,18 +6,18 @@
 
 ## Table of Contents
 
-- Overview
-- AI Governance Control Loop
-- Governance Control Framework
-- Govern — Ownership Layer
-- Map — Risk Discovery Layer
-- Measure — Detection Layer
-- Manage — Response Layer
-- Key Governance Insight
-- Governance Maturity Model
-- Key Governance Takeaways
-- Governance Implementation Checklist
-- Note
+- [Overview](#overview)
+- [AI Governance Control Loop](#ai-governance-control-loop)
+- [Governance Control Framework](#governance-control-framework)
+- [Govern — Ownership Layer](#1-govern--ownership-layer)
+- [Map — Risk Discovery Layer](#2-map--risk-discovery-layer)
+- [Measure — Detection Layer](#3-measure--detection-layer)
+- [Manage — Response Layer](#4-manage--response-layer)
+- [Key Governance Insight](#key-governance-insight)
+- [Governance Maturity Model](#governance-maturity-model)
+- [Key Governance Takeaways](#key-governance-takeaways)
+- [Governance Implementation Checklist](#governance-implementation-checklist)
+- [Note](#note)
 
   ----
   ## 📌 Overview
