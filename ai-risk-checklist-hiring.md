@@ -42,22 +42,61 @@ This checklist focuses on identifying risks related to data, model behavior, sys
 - Is this system being used in a high-stakes decision (like hiring)?  
 - Are the most critical risks identified and prioritized?
 
-  ## Example: Applying the Checklist (Amazon Hiring AI)
+  ## 5. Risk Scoring
 
-| Question | Answer |
-|--------|--------|
-| Is training data biased? | Yes |
-| Is model explainable? | No |
-| Is there human oversight? | No |
-| Can the system be unfair? | Yes |
+Each question can be answered as:
+
+- Yes = 0 (Low risk)  
+- Not Sure = 1 (Uncertain / potential risk)  
+- No = 2 (High risk)  
+
+*Note: Questions are framed in a positive form (e.g., “Is the system fair?”)  
+so that “Yes” indicates low risk and “No” indicates higher risk.*
+
+### How to use:
+- Answer all questions  
+- Add up the total score  
+
+### Risk Levels (for full checklist)
+
+- 0–10 → Low Risk  
+- 11–25 → Medium Risk  
+- 26+ → High Risk  
+
+*Note: These ranges apply when all checklist questions are used.  
+For partial examples, risk interpretation should consider context.*
+
+
+  
+
+## Example: Applying the Checklist (Amazon Hiring AI)
+
+| Section | Question | Answer | Score |
+|--------|----------|--------|-------|
+| Data | Is the training data free from bias? | No | 2 |
+| Data | Does the data include diverse groups of candidates? | No | 2 |
+| Model | Can the model’s decisions be clearly explained? | No | 2 |
+| Model | Does the model behave fairly across different groups? | No | 2 |
+| Usage | Is there human oversight in decision-making? | No | 2 |
+| Usage | Is the system monitored regularly after deployment? | No | 2 |
+| Risk & Impact | Is the system safe to use in high-stakes decisions like hiring? | No | 2 |
+| Risk & Impact | Are critical risks identified and addressed? | No | 2 |
+
+### Total Score
+
+16 out of 16 (sample subset of questions)
+
+### Final Risk Level
+
+High Risk
 
 ### Key Insights
 
-- The system learned bias from historical data  
-- Lack of proper checks increased risk  
-- The system had a high impact on hiring decisions  
+- The system relied on biased historical data  
+- Lack of transparency made decisions hard to explain  
+- No human oversight increased the risk of unfair outcomes  
+- High-impact usage (hiring) amplified the consequences  
 
-**Final Risk Level: HIGH**
 
 ## Final Note
 
