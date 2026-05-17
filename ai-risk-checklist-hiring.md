@@ -16,6 +16,7 @@ This checklist focuses on identifying risks related to data, model behavior, sys
 - Is sensitive data (like gender or name) handled appropriately?  
 - Do we know where the data comes from?  
 - Is the data reviewed or updated regularly?
+- **[EU AI Act Art. 10]** Has the dataset been evaluated for specific biases that could lead to illegal discrimination      under EU law?
 
  ## 2. Model Risks
 
@@ -25,6 +26,7 @@ This checklist focuses on identifying risks related to data, model behavior, sys
 - Are there signs that the model behaves unfairly for certain groups?  
 - Can the model be corrected or improved if issues are found?  
 - Is the model’s performance measured using clear metrics?
+- **[EU AI Act Art. 15]** Does the system meet a predefined technical threshold for metric accuracy, robustness, and stability against data drift?
 
   ## 3. System Usage Risks
 
@@ -34,6 +36,8 @@ This checklist focuses on identifying risks related to data, model behavior, sys
 - Is there a process to handle errors or failures in the system?  
 - Is there a clear owner responsible for this AI system?  
 - Are users informed that AI is being used in decision-making?
+- **[EU AI Act Art. 12]** Does the system automatically generate and retain trace logs of its operations to enable post-market monitoring?
+- **[EU AI Act Art. 14]** Are the human reviewers fully trained to spot automated confirmation bias and step in to override the system?
 
 ## 4. Risk & Impact
 
@@ -41,6 +45,7 @@ This checklist focuses on identifying risks related to data, model behavior, sys
 - Could this system negatively impact certain groups of people?  
 - Is this system being used in a high-stakes decision (like hiring)?  
 - Are the most critical risks identified and prioritized?
+- **[EU AI Act Annex III]** Is this recruitment tool explicitly declared in the corporate risk register as a High-Risk AI System requiring institutional compliance?
 
   ## 5. Risk Scoring
 
