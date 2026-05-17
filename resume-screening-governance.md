@@ -73,7 +73,7 @@ The governance model follows four layers:
 | **Measure** | Monitor fairness, drift, and system behavior |
 | **Manage** | Escalate and respond to risk events |
 
-### 🇪🇺 EU AI Act & NIST Alignment
+###  EU AI Act & NIST Alignment
 
 The four layers of this framework directly operationalize the mandatory compliance requirements for High-Risk AI recruitment systems under Chapter III of the **EU AI Act**, structured around the core functions of the **NIST AI RMF 1.0**:
 
