@@ -73,6 +73,17 @@ The governance model follows four layers:
 | **Measure** | Monitor fairness, drift, and system behavior |
 | **Manage** | Escalate and respond to risk events |
 
+### 🇪🇺 EU AI Act & NIST Alignment
+
+The four layers of this framework directly operationalize the mandatory compliance requirements for High-Risk AI recruitment systems under Chapter III of the **EU AI Act**, structured around the core functions of the **NIST AI RMF 1.0**:
+
+| Layer | Purpose | Relevant EU AI Act Articles | Regulatory Objective |
+| :--- | :--- | :--- | :--- |
+| **Govern** | Define ownership and accountability | **Art. 13** (Transparency)<br>**Art. 14** (Human Oversight)<br>**Art. 16** (Provider Obligations) | Establishes clear institutional accountability, human-in-the-loop policies, quality management systems, and transparent information provision to users. |
+| **Map** | Identify risks and impacted stakeholders | **Art. 9** (Risk Management System)<br>**Art. 10** (Data & Data Governance) | Enforces systematic identification, estimation, and mitigation of known and foreseeable risks (e.g., bias, proxy features) to candidates during development and deployment. |
+| **Measure** | Monitor fairness, drift, and system behavior | **Art. 11** (Technical Documentation)<br>**Art. 12** (Logging)<br>**Art. 15** (Accuracy & Robustness) | Mandates continuous tracking of system metrics, validation of demographic gaps, prevention of drift, and the automatic generation of auditable trace logs. |
+| **Manage** | Escalate and respond to risk events | **Art. 61** (Post-Market Monitoring)<br>**Art. 62** (Incident Reporting) | Implements the mandatory post-market monitoring plan to catch algorithmic failures early, initiate system rollbacks/pauses, and report serious incidents to authorities. |
+
 ---
 
 # 1️⃣ GOVERN — Ownership Layer
