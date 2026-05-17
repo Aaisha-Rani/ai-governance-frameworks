@@ -23,7 +23,9 @@
   ----
   ## 📌 Overview
 
-This document presents a governance framework for an AI-based **resume screening system** used to shortlist job candidates.
+This document presents a governance framework for an AI-based **resume screening system** used to shortlist job candidates. Built on the core functions of the **NIST AI Risk Management Framework (AI RMF 1.0)**—*Govern, Map, Measure, and Manage*—this framework operationalizes abstract responsible AI principles into structured corporate oversight, continuous metric monitoring, and formal response mechanisms.
+
+Additionally, because AI systems used in recruitment are classified as **High-Risk** under international regulations, this framework is mapped directly to the mandatory compliance requirements of the **EU AI Act**.
 
 The objective is to demonstrate how **AI governance principles can be operationalized** through structured oversight, risk identification, monitoring, and response mechanisms.
 
@@ -72,6 +74,8 @@ The governance model follows four layers:
 | **Map** | Identify risks and impacted stakeholders |
 | **Measure** | Monitor fairness, drift, and system behavior |
 | **Manage** | Escalate and respond to risk events |
+
+  ----- 
 
 ###  EU AI Act & NIST Alignment
 
