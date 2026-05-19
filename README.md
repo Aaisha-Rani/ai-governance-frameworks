@@ -23,7 +23,7 @@ This repository splits the AI risk lifecycle into two complementary, conceptual 
               │    - Continuous Control Loop (NIST)    │
               └────────────────────────────────────────┘
 
-              ### 1. [AI Risk Checklist — Hiring System](./ai-risk-checklist-hiring.md)
+## 1. [AI Risk Checklist — Hiring System](./ai-risk-checklist-hiring.md)
 * **Purpose:** A diagnostic audit tool designed to turn qualitative risk evaluation into a structured, quantitative checklist. 
 * **Core Logic:** Uses an objective scoring system (`Yes = 0`, `Not Sure = 1`, `No = 2`) across 4 critical risk dimensions to sort an AI application into distinct risk tiers (Low, Medium, High).
 * **Case Study Validation:** Pre-populated using a retroactive audit of the defunct historical Amazon hiring tool, resulting in a maximum severity score of **16/16 (High Risk)** to demonstrate how structured checks flag systemic flaws before deployment.
