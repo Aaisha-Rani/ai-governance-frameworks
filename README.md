@@ -10,7 +10,7 @@ Using high-stakes automated HR recruitment and resume screening as a foundationa
 
 This repository splits the AI risk lifecycle into two complementary, conceptual artifacts:
 
-┌────────────────────────────────────────┐
+              ┌────────────────────────────────────────┐
               │ 1. AI Risk Checklist (Hiring System)   │
               │    - Diagnostic Audit Tool             │
               │    - Evaluates & Scores System Risks   │
@@ -22,6 +22,8 @@ This repository splits the AI risk lifecycle into two complementary, conceptual 
               │    - Operational Lifecycle Blueprint   │
               │    - Continuous Control Loop (NIST)    │
               └────────────────────────────────────────┘
+
+
 
 ## 1. [AI Risk Checklist — Hiring System](./ai-risk-checklist-hiring.md)
 * **Purpose:** A diagnostic audit tool designed to turn qualitative risk evaluation into a structured, quantitative checklist. 
